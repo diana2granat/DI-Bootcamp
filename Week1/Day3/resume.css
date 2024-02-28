@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 5px;
+    height: 100vh;
+    width: 70%;
+    background-image: linear-gradient(to bottom, aquamarine , white);    height: 70%;
+}
+.introduction {
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    width: auto;
+    text-align: center;
+}
+    .about {
+        flex: 3;
+        margin: 10px;
+        text-align: center;
+        color: black;
+        font-size: large;
+        text-align: left;
+        padding: 10px;
+    }
+        h2 {
+            border-bottom: 1px dashed grey;
+            color: grey;
+        }
+        h4 {
+            color: grey; 
+        }
+    .photo {
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+        color: black;
+        font-size: large;
+        text-align: center;
+        background-image: url("fotka12.jpg");
+        background-size: cover;
+    }
+.line {
+    margin-right: 20px;
+    margin-left: 20px;
+    border-bottom: 1px grey dashed;
+}    
+.details {
+    display: grid;
+    width: auto;
+    gap: 5px 5px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 
+    "contact profile"
+    "education workexperience";
+    color: grey;
+}
+    .contact {
+        grid-area: contact;
+        margin: 10px;
+        padding: 10px;
+    }
+        ul {
+            list-style-type: square; /* Use squares as bullets */
+        }
+    .profile {
+        grid-area: profile;
+        margin: 10px;
+        padding: 10px;
+    }
+    .education {
+        grid-area: education;
+        margin: 10px;
+        padding: 10px;
+    }
+    .workexperience {
+        grid-area: workexperience;
+        margin: 10px;
+        padding: 10px;
+    }
