@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+nav {
+    display: block;
+    position: relative; 
+    margin: 0px;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+}
+i {
+    display: inline;
+    float: left;
+    position: relative;
+    margin: auto; /* Remove default margin */
+    color: white;
+    text-align: center;
+}
+h5 {
+    display: inline;
+    float: right;
+    position: relative;
+    margin: 0; /* Remove default margin */
+    color: white;
+    text-align: center;
+}
+article {
+    position: relative; 
+    margin: 0px;
+    background-color: rgb(239, 100, 100);
+    text-align: center;
+}
+.footer {
+    position: fixed;
+    bottom: 0; 
+    margin: 0px;
+    padding: 30px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+p {
+    position: relative;
+    margin: 0; /* Remove default margin */
+    color: white;
+}

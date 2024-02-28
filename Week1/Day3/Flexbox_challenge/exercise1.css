@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 2px red;
+    margin: 5px;
+    justify-content: space-around;
+    height: 100vh;
+    width: 90%;
+}
+.box1 {
+    flex-grow: 1; 
+    flex-shrink: 1;
+    background-color: blue;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+.box2 {
+    flex-grow: 2; 
+    flex-shrink: 3;
+    width: 60%;
+    background-color: blue;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    font-size: large;
+    align-self: center;
+}
+.box3 {
+    flex-grow: 1; 
+    flex-shrink: 1;
+    background-color: blue;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    font-size: large;
+}

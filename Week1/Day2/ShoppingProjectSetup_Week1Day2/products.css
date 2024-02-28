@@ -1,0 +1,97 @@
+body {
+    margin: auto;
+}
+.product {
+    position: relative;
+    display: inline-block; 
+    margin: 10px;
+    background-color: white;
+    width: 150px;
+    height: 400px;
+}
+.imagefield1, .imagefield2, .imagefield3, .imagefield4 {
+    position: relative;
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image within the div */
+    display: block; /* Ensure the div behaves as a block element */
+    width: 150px;
+    height: 193px;
+}
+.imagefield1 {
+    background-image: url("image1.png"); /* Specify the path to the image */
+}
+.imagefield2 {
+    background-image: url("image2.png"); /* Specify the path to the image */
+}
+.imagefield3 {
+    background-image: url("image3.png"); /* Specify the path to the image */
+}
+.imagefield4 {
+    background-image: url("image4.png"); /* Specify the path to the image */
+}
+.circle, .discount {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: xx-small;
+    text-align: center;
+    justify-content: center;
+    margin: 2px;
+}
+.circle {
+    left: 3%;
+    background-color: #04AA6D;
+    color: white;
+}
+.discount {
+    right: 10%;
+    background-color: #f51b08;
+    color: black;
+}
+.circle p {
+    margin: 2px;
+}
+.descriptionfield {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin: 5px;
+}
+.description{
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-small;
+    color: black;
+    text-align: center;
+    margin: 2px;
+}
+.price{
+    display: inline-block;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: rgba(38, 106, 38, 0.628);
+    margin: auto;
+}
+button {
+    background-color: white; 
+    color: grey; 
+    border: 1px solid rgba(128, 128, 128, 0.338);
+    border-radius: 2px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px; 
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #04AA6D;
+    color: white;
+}
