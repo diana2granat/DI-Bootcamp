@@ -124,16 +124,16 @@
 # Exercise 10 : Sandwich Orders
 # Instructions
 # Using the list below :
-# sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
+sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
 #     The deli has run out of pastrami, use a while loop to remove all occurrences of “Pastrami sandwich” from sandwich_orders.
-# pastrami = 'Pastrami'
-# for element in sandwich_orders:
-#     if pastrami in element:
-#         sandwich_orders.remove(element)
-#     else:
-#         continue
-# else:
-#     print('Pastrami is romved', sandwich_orders)
+pastrami = 'Pastrami'
+for element in sandwich_orders:
+    if pastrami in element:
+        sandwich_orders.remove(element)
+    else:
+        continue
+else:
+    print('Pastrami is removed', sandwich_orders)
 
 
 #     We need to prepare the orders of the clients:
@@ -144,14 +144,14 @@
 # I made your avocado sandwich
 # I made your egg sandwich
 # I made your chicken sandwich
-sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
-finished_sandwiches = []
-for sandwich in sandwich_orders:
-    sandwich_orders.remove(sandwich)
-    print(f'I made your {sandwich}')
-    finished_sandwiches.append(sandwich)
-else:
-    print('All the sandwiches are ready:',finished_sandwiches)
+# sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
+# finished_sandwiches = []
+# for sandwich in sandwich_orders:
+#     sandwich_orders.remove(sandwich)
+#     print(f'I made your {sandwich}')
+#     finished_sandwiches.append(sandwich)
+# else:
+#     print('All the sandwiches are ready:',finished_sandwiches)
 
 
 
