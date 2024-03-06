@@ -87,9 +87,9 @@ for letter in wallet:
     else:
         continue
 wallet_reality = int(wallet_digits_only)
-print(f'You have {wallet_reality}$ in your wallet')
-items_purchase_sorted = sorted(items_purchase)
-print(f'You want tu purchase these items: {items_purchase_sorted}')
+# print(f'You have {wallet_reality}$ in your wallet')
+# items_purchase_sorted = sorted(items_purchase)
+# print(f'You want tu purchase these items: {items_purchase_sorted}')
 
 items_purchase_with_converted_value = {}
 converted_value = ''
@@ -98,10 +98,17 @@ for key, value in items_purchase.items():
     items_purchase_with_converted_value[key] = int(converted_value)
 print(items_purchase_with_converted_value)
 
-total = 0
-chart = []
+
+basket = []
 for item, price in items_purchase_with_converted_value.items():
-    if total + price <= wallet_reality:
-        total += price
-        chart.append(item)
-print(chart) #it's not finished
+    if price <= wallet_reality:
+        while sum(basket.values()) <= wallet_reality:
+            basket.append(item)
+        else:
+            break
+    else:
+        print('too much')
+print(basket)
+        
+        
+
