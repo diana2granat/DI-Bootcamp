@@ -138,45 +138,43 @@
 #     Bonus: Give the temperature as a floating-point number instead of an integer.
 #     Bonus: Instead of asking for the season, ask the user for the number of the month (1 = January, 12 = December). Determine the season according to the month.
 #============================================answer========================================================================================
-import random
+# import random
 
-def get_random_temp(season):
-    if season == 'Winter':
-        random_num = random.randint(-40, 5)
-    elif season == 'Spring':
-        random_num = random.randint(0, 15)
-    elif season == 'Summer':
-        random_num = random.randint(10, 35)
-    else:
-        random_num = random.randint(-5, 10)
-    print(f'{random_num}*Celcius')
-    return random_num
+# def get_random_temp(season):
+#     if season == 'Winter':
+#         random_num = random.randint(-40, 5)
+#     elif season == 'Spring':
+#         random_num = random.randint(0, 15)
+#     elif season == 'Summer':
+#         random_num = random.randint(10, 35)
+#     else:
+#         random_num = random.randint(-5, 10)
+#     print(f'{random_num}*Celcius')
+#     return random_num
 
-def main():
-    temperature = get_random_temp(input(f'What is the season: '))
-    print(f"The temperature right now is {temperature} degrees Celsius.")
-    if temperature < 0:
-        print('Brrr, thats freezing! Wear some extra layers today')
-    elif 23 >= temperature >= 16:
-        print('Quite chilly! Dont forget your coat')
-    elif 32 >= temperature >= 24:
-        print('No coats')
-    elif 40 >= temperature > 32:
-        print('Super hot')
-    elif temperature > 40:
-        print('Extremely hot')
-    else:
-        print('Balanced temperature')
+# def main():
+#     temperature = get_random_temp(input(f'What is the season: '))
+#     print(f"The temperature right now is {temperature} degrees Celsius.")
+#     if temperature < 0:
+#         print('Brrr, thats freezing! Wear some extra layers today')
+#     elif 23 >= temperature >= 16:
+#         print('Quite chilly! Dont forget your coat')
+#     elif 32 >= temperature >= 24:
+#         print('No coats')
+#     elif 40 >= temperature > 32:
+#         print('Super hot')
+#     elif temperature > 40:
+#         print('Extremely hot')
+#     else:
+#         print('Balanced temperature')
 
-main()
+# main()
 
 
 # 🌟 Exercise 8 : Star Wars Quiz
 # Instructions
-
 # This project allows users to take a quiz to test their Star Wars knowledge.
 # The number of correct/incorrect answers are tracked and the user receives different messages depending on how well they did on the quiz.
-
 # Here is an array of dictionaries, containing those questions and answers
 
 # data = [
@@ -211,3 +209,49 @@ main()
 #     Create a function that informs the user of his number of correct/incorrect answers.
 #     Bonus : display to the user the questions he answered wrong, his answer, and the correct answer.
 #     If he had more then 3 wrong answers, ask him to play again.
+#============================================answer========================================================================================
+# data = [
+#     {
+#         "question": "What is Baby Yoda's real name?",
+#         "answer": "Grogu"
+#     },
+#     {
+#         "question": "Where did Obi-Wan take Luke after his birth?",
+#         "answer": "Tatooine"
+#     },
+#     {
+#         "question": "What year did the first Star Wars movie come out?",
+#         "answer": "1977"
+#     },
+#     {
+#         "question": "Who built C-3PO?",
+#         "answer": "Anakin Skywalker"
+#     },
+#     {
+#         "question": "Anakin Skywalker grew up to be who?",
+#         "answer": "Darth Vader"
+#     },
+#     {
+#         "question": "What species is Chewbacca?",
+#         "answer": "Wookiee"
+#     }
+# ]
+
+# correct = 0
+# wrong = 0
+
+# def ask_question():
+#     global correct, wrong
+#     for dictionary in data:
+#         question = dictionary["question"]
+#         answer = dictionary["answer"]
+#         print({question})
+#         user_answer = input("Your answer: ")
+#         if user_answer == answer:
+#             print('This is correct answer')
+#             correct += 1
+#         else:
+#             print('This is wrong answer')
+#             wrong += 1
+#     print(f'Wrong answers: {wrong}, corrects answers {correct}')
+# ask_question()
