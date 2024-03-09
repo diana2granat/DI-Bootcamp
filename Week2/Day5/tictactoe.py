@@ -6,7 +6,6 @@
 #     When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
 
 # Hint
-
 # To do this project, you basically need to create four functions:
 
 #     display_board() – To display the Tic Tac Toe board (GUI).
@@ -21,6 +20,8 @@
 #     What functionality will need to accur every turn to make this program work?
 #     After contemplating the question above, think about splitting your code into smaller pieces (functions).
 #     Remember to follow the single responsibility principle! each function should do one thing and do it well!
+#==================================================answer==============================================================================
+
 matrix = [
     [' ', '|', ' ', '|', ' '],
     ['-', '|', '-', '|', '-'],
