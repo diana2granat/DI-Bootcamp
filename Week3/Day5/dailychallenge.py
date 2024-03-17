@@ -8,6 +8,18 @@
 #  After a card is dealt, it should be removed from the deck.
 #===============================================answer============================================================================
 
+
+
 class Deck():
+
+    def shuffle():
+        suits = ["Hearts", "Diamonds", "Clubs", "Spades"]
+        values = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]
+        for value in values:
+            a_deck = zip(suits, values)
+
+
+    def deal():
+
 
 class Card():
