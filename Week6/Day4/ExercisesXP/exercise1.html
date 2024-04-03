@@ -1,0 +1,34 @@
+<!-- 
+Create a form like the one above. The form should contain three inputs:
+a small text input asking for a name,
+a larger textarea input to write a message,
+a submit input (“Send”)
+
+When you click the Send button, the form will be submitted with a GET method. (you can use the same HTML file for the action url)
+Where will the sent data appear? -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form method="GET">
+        Name: <br>
+        <input name="q"/><br><br>
+        Comment: <br>
+        <textarea name="comments" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Send"/>
+    </form>
+
+<script src="exercise1.js"></script>
+</body>
+</html>
+
+<!-- The data will appear in the URL's query parameters: 
+    "Request URL: file:///C:/Users/diana/Desktop/DI-Bootcamp/Week6/Day4/ExercisesXP/exercise1.html?q=Diana&comments=sdfsdf"". 
+    The sent data will appear in Payload column
+-->
