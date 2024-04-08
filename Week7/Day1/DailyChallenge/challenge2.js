@@ -78,7 +78,7 @@ function toMorse(morseJS){
     return new Promise((resolve, reject) => {
         for (const char of userInput) {
             if (!morseJS.hasOwnProperty(char)) {
-                reject("The object doesn't contain the letters from your words");
+                reject("The object doesn't contain some letters from your words");
                 return;
             }
             else{
@@ -89,16 +89,7 @@ function toMorse(morseJS){
     });
 }
 
-toJs(morse)
-    .then(morseJS => {
-        return toMorse(morseJS);
-    })
-    .then(morseTranslation => {
-        console.log("Morse Translation:", morseTranslation);
-    })
-    .catch(error => {
-        console.error(error);
-    });
+
 
 
 //   The third function called joinWords(morseTranslation), takes one argument: the morse translation array
@@ -114,3 +105,22 @@ toJs(morse)
 // .-..
 // ---
 
+function joinWords(arr){
+    const morseDisplay = arr.join(" ");
+    const contentElement = document.getElementById("content");
+    const paragraphElement = document.createElement("p");
+    paragraphElement.textContent = morseDisplay;
+    contentElement.appendChild(paragraphElement);
+}
+
+toJs(morse)
+    .then(morseJS => {
+        return toMorse(morseJS);
+    })
+    .then(morseTranslation => {
+        console.log("Morse Translation:", morseTranslation);
+        joinWords(morseTranslation);
+    })
+    .catch(error => {
+        console.error(error);
+    });
