@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Diana",
+        "lastName": "Granat",
+        "email": "diana2granat@gmail.com",
+        "username": "dianagranat",
+        "password": "$2b$10$yF4.yT9ncQHejuBOiefKwOOYE7xGnPtAjPd94JQwn3xvRZtXwBEnu"
+    },
+    {
+        "name": "John",
+        "lastName": "Doe",
+        "email": "doe@email.com",
+        "username": "johndoe",
+        "password": "$2b$10$eQyiMQmsRx/79UzY3Q/fN.jSXg7DJVhqnCaVaJGSzdjQBgllranV."
+    }
+]
