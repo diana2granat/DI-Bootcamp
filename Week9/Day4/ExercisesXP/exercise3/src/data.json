@@ -1,0 +1,25 @@
+{
+    "SocialMedias": [
+      "http://github.com/",
+      "http://linkedin.com/",
+      "http://facebook.com/"
+    ],
+    "Skills": [
+      "JavaScript",
+      "React",
+      "Node.js"
+    ],
+    "Experiences": [
+      {
+        "company": "Company A",
+        "position": "Software Engineer",
+        "duration": "2 years"
+      },
+      {
+        "company": "Company B",
+        "position": "Web Developer",
+        "duration": "1 year"
+      }
+    ]
+  }
+  
