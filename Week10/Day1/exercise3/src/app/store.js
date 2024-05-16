@@ -7,9 +7,4 @@ export default configureStore({
     }
 })
 
-// import { createStore } from 'redux';
-// import taskReducer from '../features/TaskReducer';
 
-// const store = createStore(taskReducer);
-
-// export default store;
