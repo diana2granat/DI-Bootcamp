@@ -1,9 +1,11 @@
+// "src/App.js"
 import './App.css';
 import React, { useState } from 'react';
 import { Provider } from 'react-redux';
 import store from './store';
 import TaskList from './TaskList';
 import CategorySelector from './CategorySelector';
+import AddTask from './AddTask';
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -17,7 +19,12 @@ const App = () => {
       <div>
         <h1>Productivity Tracker</h1>
         <CategorySelector onSelectCategory={handleSelectCategory} />
-        {selectedCategory && <TaskList categoryId={selectedCategory} />}
+        {selectedCategory && (
+          <>
+            <AddTask categoryId={selectedCategory} />
+            <TaskList categoryId={selectedCategory} />
+          </>
+        )}
       </div>
     </Provider>
   );

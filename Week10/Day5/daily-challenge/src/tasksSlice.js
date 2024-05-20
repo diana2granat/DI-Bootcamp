@@ -1,4 +1,4 @@
-//"src/tasksSlice.js"
+// "src/tasksSlice.js"
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = [];
@@ -22,7 +22,7 @@ const tasksSlice = createSlice({
     updateTaskProgress: (state, action) => {
       const task = state.find(task => task.id === action.payload.taskId);
       if (task) {
-        task.progress = action.payload.progress;
+        task.completed = action.payload.completed;
       }
     }
   }
